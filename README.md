@@ -14,19 +14,24 @@ Steg 5: git push origin "samma namn som nyskapade branch"
 
 _______________________________________________________________________________
 
-Steg till merging:
-
 Steg till att merga när man är klar:
 
-Steg 1: Checkout från din branch tillbaks till Main
+Steg 1: git add .
 
-Steg 2: git pull (ETT MÅSTE DU FÅR INTE GLÖMMA DET KAN FUCKA UPP ALLT)
+Steg 2: git commit -m "Beskrivning av vad du har gjort"
 
-Steg 3: git add .
+Steg 3: git checkout main
 
-Steg 4: git commit -m "Beskrivning av vad du har gjort"
+Steg 4: git pull (ETT MÅSTE DU FÅR INTE GLÖMMA DET KAN FUCKA UPP ALLT)
+Notera att steg 6 och 7 inte behövs om steg 4 skriver ut "Already up to date" i konsolen.
 
-Steg 5: git push 
+Steg 5: git checkout - (Glöm ej minustecknet på slutet. Tar dig tillbaka till din branch, den du var i när du skrev steg 4)
+
+Steg 6: git pull origin main
+
+Steg 7: Fixa eventuella merge-konflikter, sedan git add . och git commit -m "Merge main"
+
+Steg 8: git push
 
 ______________________________________________________________________________
 
