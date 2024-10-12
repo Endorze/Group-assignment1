@@ -4,3 +4,26 @@
     --color-header-bg: #f00;
     --color-header-text: #00f;
 }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 10vh;
+}
+
+.header img {
+    max-height: 5vh;
+}
+
+.footer {
+
+}
+
+.nav-bar {
+    height: 10%;
+    background-color: white;
+    opacity: 50%;
+}
