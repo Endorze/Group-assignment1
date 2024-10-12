@@ -21,3 +21,9 @@
 .footer {
 
 }
+
+.nav-bar {
+    height: 10%;
+    background-color: white;
+    opacity: 50%;
+}
