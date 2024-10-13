@@ -1,0 +1,31 @@
+
+.content-section {
+    background-color: var(--color-content-section);
+    padding: 40px 10vh;
+    color: white;
+    
+}
+
+.content-contaioner {
+    margin: auto;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    color: var(--color-button);
+    margin-bottom: 10px;
+}
+
+.content-section h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.content-section ul { 
+    margin-left: 20px;
+}

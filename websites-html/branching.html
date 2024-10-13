@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/websites-css/branching.css">
+    <link rel="stylesheet" href="/websites-css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"/>
 </head>
 <body>
-    
+    <div class="nav-bar">
+        <div class="nav-logo">
+          <img
+            src="/images/future-development-high-resolution-logo-white-transparent.png"
+          />
+        </div>
+        <div class="nav-bar-anchors">
+          <div class="nav-selected"><a href="./index.html">Home</a></div>
+          <div><a href="./aboutus.html">About us</a></div>
+          <div><a href="./">Information</a></div>
+        </div>
+        <div>
+          <button class="nav-bar-login-button">Login</button>
+          <input placeholder="Search..." class="nav-bar-searchbar" />
+        </div>
+        </div>
+
+        <section class="content-section">
+            <div class="content-container">
+                <h2>Why is Branching Necessary</h2>
+                <p>
+                    Branching in Git allows developers to work independently on diffrent features, bug fixes, or experiments without interfearing with the main codebase. It ensures that the *main branch* (often called `main`or `master`) stays stabel and free of incomplete or potentially buggy code. Teams can collaborate more efficiently by using branches for specific tasks and then merging changes when ready.
+                </p>
+
+                <h3> Common Branching Scenarions</h3>
+                <ul>
+                    <li>Developing new features without affecting the main project</li>
+                    <li>Fixing bugs while the main codebase remains unchanged</li>
+                    <li>Testing out experimental code without risking breaking the stable version</li>
+                </ul>
+            </div>
+        </section>
 </body>
 </html>
