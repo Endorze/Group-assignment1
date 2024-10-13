@@ -1,21 +1,25 @@
 :root {
-    --color-bg: #fff;
-    --color-bg-text: #000;
-    --color-header-bg: #f00;
-    --color-header-text: #00f;
+  --color-bg: #223;
+  --color-bg-text: #ffffff;
+  --color-header-bg: #223;
+  --color-header-text: #ffffff;
+  --color-button: #E1A95F;
+  --color-button-hover: #C89045;
+  --color-button-text: #2C2C2C;
+  --color-searchbar: #151520;
+  --color-content-section: #3a3a4d;
+  --font-size-header: 1.2rem;
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.header {
-    min-height: 10vh;
-}
-
-.header img {
-    max-height: 5vh;
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-family);
 }
 
 .footer {
@@ -23,7 +27,57 @@
 }
 
 .nav-bar {
-    height: 10%;
-    background-color: white;
-    opacity: 50%;
+  min-height: 10vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #223;
+  color: white;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+.nav-bar img {
+  width: 10vw;
+}
+
+.nav-bar-anchors {
+  display: flex;
+  gap: 3vw;
+}
+
+.nav-bar-anchors a {
+    text-decoration: none;
+    color: var(--color-header-text);
+    font-size: var(--font-size-header);
+}
+
+.nav-bar-login-button:hover {
+    background-color: var(--color-button-hover);
+    cursor: pointer;
+}
+
+.nav-bar-login-button {
+  padding: 10px;
+  min-width: 5vw;
+  background-color: var(--color-button);
+  color: var(--color-button-text);
+  font-weight: bold;
+  border-color: var(--color-button);
+}
+
+.nav-bar-searchbar {
+  width: 15vw;
+  padding: 10px;
+  background-color: var(--color-searchbar);
+  border-color: var(--color-searchbar);
+}
+
+.nav-bar-searchbar::placeholder {
+  color: white;
+}
+
+.nav-selected a {
+    color: var(--color-button);
 }

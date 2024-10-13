@@ -11,13 +11,17 @@
   position: absolute;
   top: 10vh;
   bottom: 10vh;
-  right: 15vh;
-  width: 40vw;
+  right: 10vh;
+  width: 45vw;
 }
 
 .hero-button {
     width: 15%;
     padding: 10px;
+    color: var(--color-button-text);
+    background-color: var(--color-button);
+    font-weight: bold;
+    border-color: var(--color-button);
 }
 
 .hero-img img {
@@ -39,7 +43,7 @@
 
 .hero-text-container {
   position: absolute;
-  left: 20vh;
+  left: 10vh;
   width: 100%;
   color: white;
   width: 850px;
@@ -60,12 +64,15 @@
 }
 
 @media screen and (max-width: 1400px) {
+
   .hero-title {
     font-size: 3rem;
   }
+
   .hero-text-container {
     left: 10vh;
   }
+
 }
 
 @media screen and (max-width: 762px) {
