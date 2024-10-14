@@ -1,0 +1,15 @@
+.about-us {
+    background-color: black;
+    color: white;
+}
+
+.about-us_title {
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+}
+
+.about-us_text {
+    font-family: var(--font-family);
+    font-size: 1.2rem;  
+}
+
