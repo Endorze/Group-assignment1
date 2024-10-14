@@ -3,9 +3,9 @@
   --color-bg-text: #ffffff;
   --color-header-bg: #223;
   --color-header-text: #ffffff;
-  --color-button: #E1A95F;
-  --color-button-hover: #C89045;
-  --color-button-text: #2C2C2C;
+  --color-button: #e1a95f;
+  --color-button-hover: #c89045;
+  --color-button-text: #2c2c2c;
   --color-searchbar: #151520;
   --color-content-section: #3a3a4d;
   --font-size-header: 1.2rem;
@@ -26,7 +26,6 @@ body {
 }
 
 .footer {
-
 }
 
 .nav-bar {
@@ -104,3 +103,50 @@ body {
 .nav-selected a {
   color: var(--color-button);
 }
+
+.nav-bar-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-bar-dropdown a {
+  text-decoration: none;
+  color: var(--color-bg-text);
+}
+
+.nav-bar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  z-index: 1;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-bar-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-bar-dropdown-content a:hover {
+  background-color: var(--color-button);
+  border-bottom-right-radius: 5px;
+}
+
+.nav-bar-dropdown:hover .nav-bar-dropdown-content {
+  display: block;
+}
+
+.nav-bar-chevron {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid var(--color-bg-text);
+  border-right: 1px solid var(--color-bg-text);
+  transform: rotate(135deg);
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
