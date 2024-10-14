@@ -29,3 +29,32 @@
 .content-section ul { 
     margin-left: 20px;
 }
+
+.commands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin: auto;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.card-content {
+    text-align: center;
+    padding-bottom: 50px ;
+}
+
+.card-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content h3 {
+    color: var(--color-button);
+}
