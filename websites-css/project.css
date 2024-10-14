@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     display: flex;
     height: 100%;
@@ -11,7 +10,6 @@ body {
 html {
     height: 100vh;
 }
-
 .header {
     background-color: var(--color-header-bg);
     margin: 0;
@@ -73,5 +71,5 @@ html {
         grid-template-rows: auto;
         padding: 0 20px; /* Lägg till padding för att hålla avståndet från sidorna */
     }
-
 }
+
