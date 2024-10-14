@@ -19,8 +19,8 @@ html {
     
 }
 
-html {
-    height: 100vh;
+.header__page-title {
+    color: var(--color-header-text);
 }
 
 .main-content {
@@ -32,7 +32,6 @@ html {
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(2, 280px) 200px;
     gap: 10px; 
-
     max-width: 800px; 
     margin: 0 auto; 
     
@@ -74,5 +73,5 @@ html {
         grid-template-rows: auto;
         padding: 0 20px; /* Lägg till padding för att hålla avståndet från sidorna */
     }
-}
 
+}
