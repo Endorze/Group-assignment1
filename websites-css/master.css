@@ -21,8 +21,8 @@
 }
 
 body {
-    background-color: var(--color-bg);
-    font-family: var(--font-family);
+  background-color: var(--color-bg);
+  font-family: var(--font-family);
 }
 
 .footer {
@@ -51,14 +51,31 @@ body {
 }
 
 .nav-bar-anchors a {
-    text-decoration: none;
-    color: var(--color-header-text);
-    font-size: var(--font-size-header);
+  position: relative;
+  text-decoration: none;
+  color: var(--color-header-text);
+  font-size: var(--font-size-header);
+  padding-bottom: 5px;
+}
+
+.nav-bar-anchors a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-button-hover);
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-bar-anchors a:hover::after {
+  width: 100%;
 }
 
 .nav-bar-login-button:hover {
-    background-color: var(--color-button-hover);
-    cursor: pointer;
+  background-color: var(--color-button-hover);
+  cursor: pointer;
 }
 
 .nav-bar-login-button {
@@ -73,8 +90,11 @@ body {
 .nav-bar-searchbar {
   width: 15vw;
   padding: 10px;
+  position: relative;
+  outline: none;
   background-color: var(--color-searchbar);
   border-color: var(--color-searchbar);
+  color: white;
 }
 
 .nav-bar-searchbar::placeholder {
@@ -82,5 +102,5 @@ body {
 }
 
 .nav-selected a {
-    color: var(--color-button);
+  color: var(--color-button);
 }
