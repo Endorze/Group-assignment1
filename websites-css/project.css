@@ -2,20 +2,76 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+html {
+    height: 100vh;
+}
+
 .header {
     background-color: var(--color-header-bg);
+    margin: 0;
     padding: 16px;
+    
 }
 
 .header__page-title {
     color: var(--color-header-text);
 }
 
-.main {
+.main-content {
     flex-grow: 1;
 }
 
-footer {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 280px) 200px;
+    gap: 10px; 
+    max-width: 800px; 
+    margin: 0 auto; 
     
-    padding: 16px;
 }
+
+
+.box {
+    background-color: var(--color-content-section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+.box__title {
+    font-size: 1.2rem;
+    color: var(--color-bg-text);
+    margin: 0; 
+    line-height: 1.4; 
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.large {
+    grid-column: 1 / span 2; 
+    }
+
+
+    
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* En kolumn som tar upp hela bredden */
+        grid-template-rows: auto;
+        padding: 0 20px; /* Lägg till padding för att hålla avståndet från sidorna */
+    }
+}
+
