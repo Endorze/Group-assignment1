@@ -9,4 +9,5 @@
 
 .about-us_text {
     font-family: var(--font-family);
+    font-size: var();
 }
