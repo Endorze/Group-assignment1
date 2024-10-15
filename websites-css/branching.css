@@ -1,7 +1,7 @@
 .content-section {
     background-color: var(--color-content-section);
     padding: 30px;
-    color: white;
+    color: var(--color-bg-text);
 }
 
 .content-container {
