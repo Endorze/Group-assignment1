@@ -15,21 +15,27 @@
 <body>
     <div class="nav-bar">
         <div class="nav-logo">
-          <img src="/images/future-development-high-resolution-logo-white-transparent.png"/>
+          <img
+            src="/images/future-development-high-resolution-logo-white-transparent.png"
+          />
         </div>
-
         <div class="nav-bar-anchors">
           <div class="nav-selected"><a href="./index.html">Home</a></div>
           <div><a href="./aboutus.html">About us</a></div>
-          <div><a href="./">Information</a></div>
+          <div class="nav-bar-dropdown">
+            <a>Information <div class="nav-bar-chevron"></div></a>
+            <div class="nav-bar-dropdown-content">
+              <a>Project</a>
+              <a>Changes</a>
+              <a href="./branching.html">Branching</a>
+            </div>
+          </div>
         </div>
-
         <div>
           <button class="nav-bar-login-button">Login</button>
           <input placeholder="Search..." class="nav-bar-searchbar" />
         </div>
-        
-    </div>
+      </div>
 
     <section class="content-section">
         <div class="content-container">

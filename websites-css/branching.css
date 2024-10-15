@@ -1,6 +1,6 @@
 .content-section {
     background-color: var(--color-content-section);
-    padding: 40px 10vh;
+    padding: 30px;
     color: white;
 }
 
@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    padding: 40px;
+    padding: 50px 10px 0;
     margin: auto;
 }
 
@@ -50,12 +50,12 @@
 
 .card-content {
     text-align: center;
-    padding-bottom: 50px;
+    padding: 40px;
 }
 
 .card-image img { 
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -67,7 +67,6 @@
 
 .card-content p {
     font-size: var(--font-size-p);
-    padding: 10px;
 }
 
 
