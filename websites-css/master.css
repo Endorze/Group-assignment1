@@ -158,14 +158,6 @@ body {
   margin-left: 3px;
 }
 
-.easter-egg {
-  height: 100vh;
-}
-
-.easter-egg iframe {
-  height: 100vh;
-}
-
 @media (max-width: 762px) {
   .nav-bar-searchbar {
     display: none;
