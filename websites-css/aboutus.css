@@ -15,9 +15,13 @@
     justify-content: center;
     flex-direction: column;
     gap: 70px;
+<<<<<<< HEAD
     padding: 30px 100px;
     
     
+=======
+    padding: 30px 100px; 
+>>>>>>> ed21e81aa1a1c7ec0359effa1c4a0daef7abcb8d
 }
 
 .about-us_text {
@@ -31,3 +35,35 @@
     text-align: center;
     border-radius: 10px;
 }
+<<<<<<< HEAD
+=======
+
+.team-section {
+    background-color: var(--color-bg);
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 50px;
+    padding: 1rem;
+}
+
+.team-member {
+    background-color: var(--color-content-section);
+    color: var(--color-bg-text);
+    padding: 2rem;
+}
+
+.team-member h3 {
+    font-size: var(--font-size-h3);
+    color: #C89045;
+}
+
+.team-member p {
+    font-size: var(--font-size-p);
+}
+>>>>>>> ed21e81aa1a1c7ec0359effa1c4a0daef7abcb8d
