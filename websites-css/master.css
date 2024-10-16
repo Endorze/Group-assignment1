@@ -28,6 +28,12 @@ body {
 }
 
 .footer {
+  display: flex;
+  height: 20vh;
+  background-color: var(--color-bg);
+  color: var(--color-bg-text);
+  justify-content: space-evenly;
+  margin-top: 10vh;
 }
 
 .nav-bar {
