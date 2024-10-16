@@ -12,13 +12,14 @@ html {
     height: 100vh;
 }
 
-.header {
-    background-color: var(--color-header-bg);
-    margin: 0;
+.topp {
+    text-align: center;
     padding: 16px;
-    
+    font-family: var(--font-family);
+    background-color: var(--color-button-hover);
+    font-size: 2rem;
+    color: var(--color-bg-text);
 }
-
 
 .main-content {
     flex-grow: 1;
@@ -35,7 +36,7 @@ html {
 }
 
 
-.box {
+.box, .box__large {
     background-color: var(--color-content-section);
     display: flex;
     align-items: center;
@@ -58,26 +59,73 @@ html {
     text-align: center;
 }
 
-.large {
+.box__large {
     grid-column: 1 / span 2; 
     }
 
-.footer {
-    padding: 32px;
-}
+
+.moving-text {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 50%;
+    text-align: center;
+    font-size: 1,4rem;
+    background-color: var(--color-button-hover);
+    padding: 10px;
+    animation: moveText 20s linear forwards;
+    }
+
+    .box:hover {
+        animation: vibrate 0.5s linear; 
+        animation-iteration-count: 3;
+    }
+
+    .box__large:hover {
+        animation: vibrate 0.5s linear; 
+        animation-iteration-count: 3;
+    }
+
+    @keyframes vibrate {
+        0%, 100% { transform: translateX(0); }
+        20% { transform: translateX(-2px); }
+        40% { transform: translateX(2px); }
+        60% { transform: translateX(-2px); }
+        80% { transform: translateX(2px); }
+    }
+    
+    @keyframes moveText {
+        0% { left: -100%; }
+        50% { left: 50%; } 
+        100% { left: 100%; }
+    }
+    
+    
+
+
 
 
     
 @media screen and (max-width: 768px) {
+
+    .box__title {
+        font-size: 1rem;
+    }
     
+
     .grid-container {
         display: grid; 
         grid-template-columns: 1fr; 
+        gap: 20px;
     }
 
-    .box {
-        height: 200px; 
+    .box, .box__large {
+        height: auto; 
         width: 100%; 
+        grid-column: auto;
+        
+        
     }
+
 }
 
