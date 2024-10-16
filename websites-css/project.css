@@ -15,13 +15,10 @@ html {
 .header {
     background-color: var(--color-header-bg);
     margin: 0;
-    padding: 0;
+    padding: 16px;
     
 }
 
-.header__page-title {
-    color: var(--color-header-text);
-}
 
 .main-content {
     flex-grow: 1;
@@ -72,10 +69,15 @@ html {
 
     
 @media screen and (max-width: 768px) {
+    
     .grid-container {
-        grid-template-columns: 1fr; /* En kolumn som tar upp hela bredden */
-        grid-template-rows: auto;
-        padding: 0 20px; /* Lägg till padding för att hålla avståndet från sidorna */
+        display: grid; 
+        grid-template-columns: 1fr; 
+    }
+
+    .box {
+        height: 200px; 
+        width: 100%; 
     }
 }
 
