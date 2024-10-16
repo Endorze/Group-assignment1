@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: var(--color-header-bg);
+    padding: 16px;
+}
+
+.header__page-title {
+    color: var(--color-header-text);
+}
+
+.main {
+    flex-grow: 1;
+}
+
+footer {
+    
+    padding: 16px;
+}
