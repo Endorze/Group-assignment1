@@ -15,9 +15,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 70px;
-    padding: 30px 100px;
-    
-    
+    padding: 30px 100px; 
 }
 
 .about-us_text {
@@ -30,4 +28,33 @@
     padding: 70px;
     text-align: center;
     border-radius: 10px;
+}
+
+.team-section {
+    background-color: var(--color-bg);
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 50px;
+    padding: 1rem;
+}
+
+.team-member {
+    background-color: var(--color-content-section);
+    color: var(--color-bg-text);
+    padding: 2rem;
+}
+
+.team-member h3 {
+    font-size: var(--font-size-h3);
+    color: #C89045;
+}
+
+.team-member p {
+    font-size: var(--font-size-p);
 }
