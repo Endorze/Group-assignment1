@@ -1,9 +1,7 @@
-
 .content-section {
     background-color: var(--color-content-section);
-    padding: 40px 10vh;
-    color: white;
-    
+    padding: 30px;
+    color: var(--color-bg-text);
 }
 
 .content-container {
@@ -32,29 +30,58 @@
 
 .commands-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 50px 10px 0;
     margin: auto;
 }
 
 .card {
+    background-color: var(--color-searchbar);
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .card-content {
     text-align: center;
-    padding-bottom: 50px ;
+    padding: 40px;
 }
 
-.card-content img {
+.card-image img { 
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
 }
 
 .card-content h3 {
     color: var(--color-button);
+    font-size: var(--font-size-h3);
+    margin-bottom: 16px;
+}
+
+.card-content p {
+    font-size: var(--font-size-p);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .commands-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 14px;
+    }
+
+    .content-container {
+        padding: 16px;
+    } 
+
 }
