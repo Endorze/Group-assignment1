@@ -1,29 +1,23 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     height: 100%;
     flex-direction: column;
-
 }
 
 html {
     height: 100vh;
 }
 
-.header {
-    background-color: var(--color-header-bg);
-    margin: 0;
-    padding: 16px;
-    
-}
-
-.header__page-title {
-    color: var(--color-header-text);
+.nav-bar{
+    margin-bottom: 20px;
 }
 
 .main-content {
+    margin-top: 100px;
     flex-grow: 1;
 }
 
@@ -81,10 +75,28 @@ html {
 
     
 @media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* En kolumn som tar upp hela bredden */
-        grid-template-rows: auto;
-        padding: 0 20px; /* Lägg till padding för att hålla avståndet från sidorna */
+
+    .box__title {
+        font-size: 1rem;
     }
     
+
+    .grid-container {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+
+    .box {
+        height: auto; 
+        width: 100%; 
+        grid-column: auto;
+        
+        
+        
+    }
+
 }
