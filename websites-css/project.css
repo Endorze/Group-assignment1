@@ -38,7 +38,7 @@ html {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--color-button-hover);
-    font-size: var(--font-size-h3);
+    font-size: 1.5rem;
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px; 
