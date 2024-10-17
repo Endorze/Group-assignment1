@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="..//websites-css/project.css">
-    <link rel="stylesheet" href="..//websites-css/master.css">
+    <link rel="stylesheet" href="../websites-css/master.css" />
     
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__page-title">Project</h1>
-    </header>
-
-    <section class="main-content"></section>
+    <div class="nav-bar">
+        <a class="nav-logo" href="../websites-html/index.html">
+          <img
+            src="../images/future-development-high-resolution-logo-white-transparent.png"
+          />
+        </a>
+        <div class="nav-bar-anchors">
+          <div class="nav-selected"><a href="./index.html">Home</a></div>
+          <div><a href="../websites-html/aboutus.html">About us</a></div>
+          <div class="nav-bar-dropdown">
+            <a>Information
+              <div class="nav-bar-chevron"></div
+            ></a>
+            <div class="nav-bar-dropdown-content">
+              <a href="../websites-html/project.html">Project</a>
+              <a href="../websites-html/changes.html">Changes</a>
+              <a href="../websites-html/branching.html">Branching</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><button class="nav-bar-login-button">Login</button></a>
+          <input placeholder="Search..." class="nav-bar-searchbar" />
+        </div>
+      </div>    
+    <section class="main-content">
     <main class="main">
            
         <div class="grid-container">
@@ -22,6 +43,7 @@
                     Remote repositories enable collaboration by allowing multiple developers to work on the same project from different locations, provide a backup of the codebase, and support workflows like version control, code review, for a streamlined development process.
                 </h3> 
             </div>
+
             <div class="box"><h3 class="box__title">Create a Repository on GitHub and clone it locally.
                 Make Changes, then git add, commit, and push to update.
                 Collaborate with others using branches and pull requests
@@ -46,7 +68,11 @@
                 The project maintainer can review the pull request, discuss changes, and merge it into the main project if approved.
             </h3>
         </div>
+        <div class="box">
+            <img src="../images/large pic project.jpg" alt="Beskrivande text" width="400" height="auto">
         </div>
+        </div>
+
     </main>
 </section>
     <footer class="footer">

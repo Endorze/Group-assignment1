@@ -10,6 +10,7 @@ body {
 html {
     height: 100vh;
 }
+
 .header {
     background-color: var(--color-header-bg);
     margin: 0;
@@ -17,8 +18,8 @@ html {
     
 }
 
-.header__page-title {
-    color: var(--color-header-text);
+html {
+    height: 100vh;
 }
 
 .main-content {
@@ -28,8 +29,8 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 280px) 200px;
-    gap: 10px; 
+    grid-template-rows: repeat(2, 280px) 280px;
+    gap: 30px; 
     max-width: 800px; 
     margin: 0 auto; 
     
@@ -41,8 +42,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #000;
-    font-size: 1.5rem;
+    border: 1px solid var(--color-button-hover);
+    font-size: var(--font-size-h3);
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px; 
@@ -59,10 +60,23 @@ html {
     text-align: center;
 }
 
-.large {
-    grid-column: 1 / span 2; 
+
+.box:hover {
+    animation: vibrate 0.5s linear; 
+    animation-iteration-count: 3;
     }
 
+    
+
+
+    @keyframes vibrate {
+        0%, 100% { transform: translateX(0); }
+        20% { transform: translateX(-2px); }
+        40% { transform: translateX(2px); }
+        60% { transform: translateX(-2px); }
+        80% { transform: translateX(2px); }
+    }
+    
 
     
 @media screen and (max-width: 768px) {
@@ -72,4 +86,3 @@ html {
         padding: 0 20px; /* Lägg till padding för att hålla avståndet från sidorna */
     }
 }
-
