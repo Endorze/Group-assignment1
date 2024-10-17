@@ -6,13 +6,36 @@
     <title>Project</title>
     <link rel="stylesheet" href="..//websites-css/project.css">
     <link rel="stylesheet" href="../websites-css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
 </head>
 <body>
-    <div class="topp">Project Git</div>
-
-    <div class="moving-text">Project Git</div>
-    
+    <div class="nav-bar">
+        <a class="nav-logo" href="../websites-html/index.html">
+          <img
+            src="../images/future-development-high-resolution-logo-white-transparent.png"
+          />
+        </a>
+        <div class="nav-bar-anchors">
+          <div class="nav-selected"><a href="./index.html">Home</a></div>
+          <div><a href="../websites-html/aboutus.html">About us</a></div>
+          <div class="nav-bar-dropdown">
+            <a>Information
+              <div class="nav-bar-chevron"></div
+            ></a>
+            <div class="nav-bar-dropdown-content">
+              <a href="../websites-html/project.html">Project</a>
+              <a href="../websites-html/changes.html">Changes</a>
+              <a href="../websites-html/branching.html">Branching</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><button class="nav-bar-login-button">Login</button></a>
+          <input placeholder="Search..." class="nav-bar-searchbar" />
+        </div>
+      </div>    
     <section class="main-content">
     <main class="main">
         
@@ -28,13 +51,16 @@
             <div class="box">
                 <img src="../images/Project team.jpg" alt="Beskrivande text" width="400" height="auto">
             </div>
-            <div class="box"><h3 class="box__title">Create a Repository on GitHub and clone it locally.
+            <div class="box">
+                <h3 class="box__title">
+                Create a Repository on GitHub and clone it locally.
                 Make Changes, then git add, commit, and push to update.
                 Collaborate with others using branches and pull requests
                </h3>
             </div>
 
-            <div class="box"><h3 class="box__title">
+            <div class="box">
+                <h3 class="box__title">
                 git init: Initializes a new Git repository in the current directory.
                 git add file: Stages changes in the specified file for the next commit; use git add . to stage all changes.
                 git commit -m "message": Commits the staged changes with a descriptive message, creating a snapshot of the project.
@@ -46,7 +72,8 @@
             <div class="box">
                 <img src="../images/Git 222.jpg" alt="Beskrivande text" width="400" height="auto">
             </div>
-            <div class="box"><h3 class="box__title">
+            <div class="box">
+                <h3 class="box__title">
                     git remote add origin URL: Links your local repository to a remote repository on GitHub.
                     git push -u origin main: Pushes your local commits to the remote repository's main branch and sets the upstream branch.
                     git pull origin main: Fetches and merges changes from the remote repository's main branch into your local branch.
@@ -60,7 +87,7 @@
             </h3>
         </div>
         <div class="box">
-            <img src="../images/Project new.jpg" alt="Beskrivande text" width="400" height="auto">
+            <img src="../images/large pic project.jpg" alt="Beskrivande text" width="400" height="auto">
         </div>
         </div>
        

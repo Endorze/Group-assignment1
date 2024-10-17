@@ -12,37 +12,33 @@ html {
     height: 100vh;
 }
 
-.topp {
-    text-align: center;
-    padding: 16px;
-    font-family: var(--font-family);
-    background-color: var(--color-button-hover);
-    font-size: 2rem;
-    color: var(--color-bg-text);
+.nav-bar{
+    margin-bottom: 20px;
 }
 
 .main-content {
+    margin-top: 100px;
     flex-grow: 1;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 280px) 200px;
-    gap: 10px; 
+    grid-template-rows: repeat(2, 280px) 280px;
+    gap: 30px; 
     max-width: 800px; 
     margin: 0 auto; 
     
 }
 
 
-.box, .box__large {
+.box {
     background-color: var(--color-content-section);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #000;
-    font-size: 1.5rem;
+    border: 1px solid var(--color-button-hover);
+    font-size: var(--font-size-h3);
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px; 
@@ -59,32 +55,14 @@ html {
     text-align: center;
 }
 
-.box__large {
-    grid-column: 1 / span 2; 
+
+.box:hover {
+    animation: vibrate 0.5s linear; 
+    animation-iteration-count: 3;
     }
 
+    
 
-.moving-text {
-    position: fixed;
-    top: 0;
-    left: -100%; 
-    width: 50%;
-    text-align: center;
-    font-size: 1,4rem;
-    background-color: var(--color-button-hover);
-    padding: 10px;
-    animation: moveText 20s linear forwards;
-    }
-
-    .box:hover {
-        animation: vibrate 0.5s linear; 
-        animation-iteration-count: 3;
-    }
-
-    .box__large:hover {
-        animation: vibrate 0.5s linear; 
-        animation-iteration-count: 3;
-    }
 
     @keyframes vibrate {
         0%, 100% { transform: translateX(0); }
@@ -94,16 +72,6 @@ html {
         80% { transform: translateX(2px); }
     }
     
-    @keyframes moveText {
-        0% { left: -100%; }
-        50% { left: 50%; } 
-        100% { left: 100%; }
-    }
-    
-    
-
-
-
 
     
 @media screen and (max-width: 768px) {
@@ -117,12 +85,16 @@ html {
         display: grid; 
         grid-template-columns: 1fr; 
         gap: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
     }
 
-    .box, .box__large {
+    .box {
         height: auto; 
         width: 100%; 
         grid-column: auto;
+        
         
         
     }
