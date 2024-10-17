@@ -3,48 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../websites-css/changes.css" />
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="../websites-css/index.css" />
     <link rel="stylesheet" href="../websites-css/master.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-    <nav class="nav-bar">
-        <div class="nav-logo">
-            <img src="/images/future-development-high-resolution-logo-white-transparent.png" alt="Company Logo" />
+    <link rel="stylesheet" href="../websites-css/changes.css">
+  </head>
+
+  <body>
+
+    <div class="nav-bar">
+      <a class="nav-logo" href="../websites-html/index.html">
+        <img
+          src="../images/future-development-high-resolution-logo-white-transparent.png"
+          alt="Company Logo"
+        />
+      </a>
+      <div class="nav-bar-anchors">
+        <div class="nav-selected"><a href="./index.html">Home</a></div>
+        <div><a href="../websites-html/aboutus.html">About us</a></div>
+        <div class="nav-bar-dropdown">
+          <a>Information
+            <div class="nav-bar-chevron"></div
+          ></a>
+          <div class="nav-bar-dropdown-content">
+            <a href="../websites-html/project.html">Project</a>
+            <a href="../websites-html/changes.html">Changes</a>
+            <a href="../websites-html/branching.html">Branching</a>
+          </div>
         </div>
-        <div class="nav-bar-anchors">
-            <div class="nav-selected"><a href="./index.html">Home</a></div>
-            <div><a href="./aboutus.html">About us</a></div>
-            <div><a href="./">Information</a></div>
-        </div>
-    <header>
-        <nav class="nav-bar">
-            <div class="nav-logo">
-                <img src="images/logo.png" alt="Company Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <button class="nav-bar-login-button">Login</button>
+        </a>
+        <input placeholder="Search..." class="nav-bar-searchbar" />
+      </div>
+    </div>
 
     <main>
-        <section class="coming-soon-section">
-            <h1 class="coming-soon-title">Coming Soon</h1>
-            <p class="coming-soon-description">We are working hard to bring you an amazing experience. Stay tuned!</p>
+      <div class="container">
+        <h3>Making Changes in a Project</h3>
+        <div class="git-command">
+          <h4>git status</h4>
+          <p>The <code>git status</code> command shows the current status of your Git repository. It lets you see which files have been modified, which are unstaged, and which are staged for commit.</p>
+        </div>
+        
+        <div class="git-command">
+          <h4>git add &lt;filename&gt;</h4>
+          <p>This command is used to add specific files to the staging area. For example, <code>git add index.html</code> will add just that file for commit.</p>
+        </div>
+    
+        <div class="git-command">
+          <h4>git add .</h4>
+          <p>This command stages all changed files in the project for commit. The difference between <code>git add &lt;filename&gt;</code> and <code>git add .</code> is that the latter stages all changes, while the former only stages a single file.</p>
+        </div>
+    
+        <div class="git-command">
+          <h4>git commit -m "description of changes"</h4>
+          <p>The <code>git commit</code> command saves your changes to the local Git repository. It’s important to write meaningful commit messages to explain what has been changed, like <code>git commit -m "Added search functionality"</code>.</p>
+        </div>
+    
+        <div class="git-command">
+          <h4>git push</h4>
+          <p>This command is used to send your committed changes from your local repository to a remote repository, like GitHub. Example: <code>git push origin main</code>.</p>
+        </div>
+      </div>
 
             <!-- Static Countdown Timer -->
             <div class="timer">
                 <div class="time-segment">
-                    <span>35</span>
+                    <span>30</span>
                     <p>Days</p>
                 </div>
                 <div class="time-segment">
@@ -60,18 +94,8 @@
                     <p>Seconds</p>
                 </div>
             </div>
-
-            <!-- Subscription Form -->
-            <form id="subscription-form" class="subscription-form" action="#" method="POST">
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Notify Me</button>
-            </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Changes Project. All rights reserved.</p>
-    </footer>
-
-</body>
+  </body>
 </html>
