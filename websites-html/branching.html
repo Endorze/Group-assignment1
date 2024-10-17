@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Branching</title>
     <link rel="stylesheet" href="/websites-css/branching.css">
     <link rel="stylesheet" href="/websites-css/master.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,28 +22,103 @@
         <div class="nav-bar-anchors">
           <div class="nav-selected"><a href="./index.html">Home</a></div>
           <div><a href="./aboutus.html">About us</a></div>
-          <div><a href="./">Information</a></div>
+          <div class="nav-bar-dropdown">
+            <a>Information <div class="nav-bar-chevron"></div></a>
+            <div class="nav-bar-dropdown-content">
+              <a>Project</a>
+              <a>Changes</a>
+              <a href="./branching.html">Branching</a>
+            </div>
+          </div>
         </div>
         <div>
           <button class="nav-bar-login-button">Login</button>
           <input placeholder="Search..." class="nav-bar-searchbar" />
         </div>
+      </div>
+
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Why is Branching Necessary</h2>
+            <p>
+                Branching in Git allows developers to work independently on different features, bug fixes, or experiments without interfering with the main codebase. It ensures that the *main branch* (often called `main` or `master`) stays stable and free of incomplete or potentially buggy code. Teams can collaborate more efficiently by using branches for specific tasks and then merging changes when ready.
+            </p>
+    
+            <h3>Common Branching Scenarios</h3>
+            <ul>
+                <li>Developing new features without affecting the main project</li>
+                <li>Fixing bugs while the main codebase remains unchanged</li>
+                <li>Testing out experimental code without risking breaking the stable version</li>
+            </ul>
         </div>
-
-        <section class="content-section">
-            <div class="content-container">
-                <h2>Why is Branching Necessary</h2>
-                <p>
-                    Branching in Git allows developers to work independently on diffrent features, bug fixes, or experiments without interfearing with the main codebase. It ensures that the *main branch* (often called `main`or `master`) stays stabel and free of incomplete or potentially buggy code. Teams can collaborate more efficiently by using branches for specific tasks and then merging changes when ready.
-                </p>
-
-                <h3> Common Branching Scenarions</h3>
-                <ul>
-                    <li>Developing new features without affecting the main project</li>
-                    <li>Fixing bugs while the main codebase remains unchanged</li>
-                    <li>Testing out experimental code without risking breaking the stable version</li>
-                </ul>
+    
+        <div class="commands-grid">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/carbon (1).png" alt="Git create branch command">
+                </div>
+                <div class="card-content">
+                    <h3>Creating a New Branch</h3>
+                    <p><code>git checkout -b &lt;branch-name&gt;</code></p>
+                    <p>This command creates a new branch and switches to it.</p>
+                </div>
             </div>
-        </section>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/carbon (2).png" alt="Git switch branch command">
+                </div>
+                <div class="card-content">
+                    <h3>Switching Between Branches</h3>
+                    <p><code>git checkout &lt;branch-name&gt;</code></p>
+                    <p>This command allows you to switch to an existing branch.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/carbon (3).png" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Listing All Branches</h3>
+                    <p><code>git branch</code></p>
+                    <p>This command shows all branches in your repository.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/carbon (4).png" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Merging Branches</h3>
+                    <p><code>git checkout main</code><br><code>git merge &lt;branch-name&gt;</code></p>
+                    <p>Merge changes from another branch into the main branch.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/carbon (5).png" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Deleting a Branch</h3>
+                    <p><code>git branch -d &lt;branch-name&gt;</code></p>
+                    <p>After merging, delete the branch locally using this command.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="/images/carbon (6).png" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Pushing Branches to Remote</h3>
+                    <p><code>git push origin &lt;branch-name&gt;</code></p>
+                    <p>To share your branch with others, push it to the remote repository.</p>
+                </div>
+            </div>
+        </div>
+    </section>  
 </body>
 </html>
