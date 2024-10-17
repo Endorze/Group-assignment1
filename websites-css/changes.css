@@ -22,7 +22,7 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 80px auto;
   padding: 20px;
   background-color:#e1a95f;
   border-radius: 8px;
@@ -30,9 +30,31 @@ body {
 }
 
 .git-command {
-  margin-bottom: 20px;
-  text-align: unset;
+  margin-top: 40px;
+  text-align:start;
 }
+
+/* Timer with Java */
+
+.timer-box {
+  text-align:unset;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+ background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+#countdown span {
+  font-size: 24px;
+ font-weight: bold;
+ text-align: center;
+
+}
+
 
 .timer {
   background-color: whitesmoke;
