@@ -22,8 +22,6 @@ html {
 }
 
 h4 {
-    font-family: var(--font-family);
-    font-size: var(--font-size-p);
     color: var(--color-header-text);
 }
 
