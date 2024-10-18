@@ -17,8 +17,12 @@ html {
 }
 
 .main-content {
-    margin-top: 100px;
     flex-grow: 1;
+    margin-top: 120px;
+}
+
+h4 {
+    color: var(--color-header-text);
 }
 
 .grid-container {
@@ -38,7 +42,7 @@ html {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--color-button-hover);
-    font-size: var(--font-size-h3);
+    font-size: 1.5rem;
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px; 
@@ -55,14 +59,10 @@ html {
     text-align: center;
 }
 
-
 .box:hover {
     animation: vibrate 0.5s linear; 
     animation-iteration-count: 3;
     }
-
-    
-
 
     @keyframes vibrate {
         0%, 100% { transform: translateX(0); }
@@ -71,7 +71,88 @@ html {
         60% { transform: translateX(-2px); }
         80% { transform: translateX(2px); }
     }
+
+    .animated-text {
+        position: absolute;
+        top: 30px;
+        left: -100%; 
+        width: 100%;
+        text-align: center;
+        font-size: var(--font-size-h3);
+        font-weight: bold;
+        animation: slideIn 2s forwards;
+        margin-top: 70px;
+        
+    }
     
+    
+    @keyframes slideIn {
+        to {
+            left: 0; 
+        }
+    }
+
+    .animated-text__2 {
+        position: absolute;
+        top: calc(50% + 30px); 
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        font-size: var(--font-size-h3);
+        font-weight: bold;
+        animation: slide-in 2s forwards;
+        
+        
+    }
+
+    .animated-text__3 {
+        position: absolute;
+        top: calc(90% + 30px); 
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        font-size: var(--font-size-h3);
+        font-weight: bold;
+        animation: slide-in 2s forwards;
+        
+    }
+
+    .animated-text__4 {
+        position: absolute;
+        top: calc(90% + 340px); 
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        font-size: var(--font-size-h3);
+        font-weight: bold;
+        animation: slide-in 2s forwards;
+        z-index: 10;
+        
+    }
+
+    .animated-text__5 {
+        position: absolute;
+        top: calc(100% + 600px); 
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        font-size: var(--font-size-h3);
+        
+        animation: slide-in 2s forwards;
+        z-index: 10;
+        
+    }
+
+    
+    @keyframes slide-in {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+    }
 
     
 @media screen and (max-width: 768px) {
@@ -89,14 +170,137 @@ html {
         margin-right: 20px;
         
     }
+    
 
     .box {
         height: auto; 
         width: 100%; 
         grid-column: auto;
-        
-        
-        
+    }
+    #box1 {
+        grid-row: 1;
+        grid-column: 1;
     }
 
+    #img1 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #box2 {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #img2 {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+   
+    #box4 {
+        grid-row: 5;
+        grid-column: 1;
+        }
+    
+    #img4 {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    #box5 {
+        grid-row: 7;
+        grid-column: 1;
+        }
+
+    #img5 {
+        grid-row: 8;
+        grid-column: 1;
+
+
+
 }
+
+.animated-text {
+    position: absolute;
+    top: 40px;
+    left: -100%; 
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    animation: slideIn 2s forwards;
+    margin-top: 70px;
+    
+}
+
+
+
+
+@keyframes slideIn {
+    to {
+        left: 0; 
+    }
+}
+
+.animated-text__2 {
+    position: absolute;
+    top: calc(80% + 35px); 
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-p);
+    animation: slide-in 2s forwards;
+    
+    
+}
+
+.animated-text__3 {
+    position: absolute;
+    top: calc(90% + 580px); 
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-p);
+    animation: slide-in 2s forwards;
+    
+}
+
+.animated-text__4 {
+    position: absolute;
+    top: calc(100% + 1065px); 
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-p);
+    animation: slide-in 2s forwards;
+    z-index: 10;
+    
+}
+
+.animated-text__5 {
+    position: absolute;
+    top: calc(100% + 1700px); 
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-p);
+    animation: slide-in 2s forwards;
+    z-index: 10;
+    
+}
+
+
+@keyframes slide-in {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+}
+}
+
+
+
