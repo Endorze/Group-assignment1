@@ -1,127 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Branching</title>
-    <link rel="stylesheet" href="../websites-css/branching.css">
-    <link rel="stylesheet" href="../websites-css/master.css">
+    <link rel="stylesheet" href="../websites-css/branching.css" />
+    <link rel="stylesheet" href="../websites-css/master.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"/>
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="nav-bar">
-        <div class="nav-logo">
-          <img
-            src="/images/future-development-high-resolution-logo-white-transparent.png"
-          />
-        </div>
-        <div class="nav-bar-anchors">
-          <div class="nav-selected"><a href="./index.html">Home</a></div>
-          <div><a href="./aboutus.html">About us</a></div>
-          <div class="nav-bar-dropdown">
-            <a>Information <div class="nav-bar-chevron"></div></a>
-            <div class="nav-bar-dropdown-content">
-              <a>Project</a>
-              <a>Changes</a>
-              <a href="./branching.html">Branching</a>
-            </div>
+      <a class="nav-logo" href="../websites-html/index.html">
+        <img
+          src="../images/future-development-high-resolution-logo-white-transparent.png"
+        />
+      </a>
+      <div class="nav-bar-anchors">
+        <div><a href="./index.html">Home</a></div>
+        <div><a href="../websites-html/aboutus.html">About us</a></div>
+        <div class="nav-bar-dropdown">
+          <a style="color: #e1a95f;"
+            >Information
+            <div class="nav-bar-chevron"></div
+          ></a>
+          <div class="nav-bar-dropdown-content">
+            <a href="../websites-html/project.html">Project</a>
+            <a href="../websites-html/changes.html">Changes</a>
+            <a href="../websites-html/branching.html">Branching</a>
           </div>
-        </div>
-        <div>
-          <button class="nav-bar-login-button">Login</button>
-          <input placeholder="Search..." class="nav-bar-searchbar" />
         </div>
       </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+          ><button class="nav-bar-login-button">Login</button></a
+        >
+        <input placeholder="Search..." class="nav-bar-searchbar" />
+      </div>
+    </div>
 
     <section class="content-section">
-        <div class="content-container">
-            <h2>Why is Branching Necessary</h2>
-            <p>
-                Branching in Git allows developers to work independently on different features, bug fixes, or experiments without interfering with the main codebase. It ensures that the *main branch* (often called `main` or `master`) stays stable and free of incomplete or potentially buggy code. Teams can collaborate more efficiently by using branches for specific tasks and then merging changes when ready.
-            </p>
-    
-            <h3>Common Branching Scenarios</h3>
-            <ul>
-                <li>Developing new features without affecting the main project</li>
-                <li>Fixing bugs while the main codebase remains unchanged</li>
-                <li>Testing out experimental code without risking breaking the stable version</li>
-            </ul>
-        </div>
-    
-        <div class="card-section">
-         <div class="card-container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/carbon (1).png" alt="Git create branch command">
-                </div>
-                <div class="card-content">
-                    <h3>Creating a New Branch</h3>
-                    <p><code>git checkout -b &lt;branch-name&gt;</code></p>
-                    <p>This command creates a new branch and switches to it.</p>
-                </div>
+      <div class="content-container">
+        <h2>Why is Branching Necessary</h2>
+        <p>
+          Branching in Git allows developers to work independently on different
+          features, bug fixes, or experiments without interfering with the main
+          codebase. It ensures that the *main branch* (often called `main` or
+          `master`) stays stable and free of incomplete or potentially buggy
+          code. Teams can collaborate more efficiently by using branches for
+          specific tasks and then merging changes when ready.
+        </p>
+
+        <h3>Common Branching Scenarios</h3>
+        <ul>
+          <li>Developing new features without affecting the main project</li>
+          <li>Fixing bugs while the main codebase remains unchanged</li>
+          <li>
+            Testing out experimental code without risking breaking the stable
+            version
+          </li>
+        </ul>
+      </div>
+
+      <div class="card-section">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="/images/carbon (1).png"
+                alt="Git create branch command"
+              />
             </div>
-    
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/carbon (2).png" alt="Git switch branch command">
-                </div>
-                <div class="card-content">
-                    <h3>Switching Between Branches</h3>
-                    <p><code>git checkout &lt;branch-name&gt;</code></p>
-                    <p>This command allows you to switch to an existing branch.</p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/carbon (3).png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Listing All Branches</h3>
-                    <p><code>git branch</code></p>
-                    <p>This command shows all branches in your repository.</p>
-                </div>
+            <div class="card-content">
+              <h3>Creating a New Branch</h3>
+              <p><code>git checkout -b &lt;branch-name&gt;</code></p>
+              <p>This command creates a new branch and switches to it.</p>
             </div>
           </div>
-            <div class="card-container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/carbon (4).png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Merging Branches</h3>
-                    <p><code>git checkout main</code><br><code>git merge &lt;branch-name&gt;</code></p>
-                    <p>Merge changes from another branch into the main branch.</p>
-                </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="/images/carbon (2).png"
+                alt="Git switch branch command"
+              />
             </div>
-    
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/carbon (5).png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Deleting a Branch</h3>
-                    <p><code>git branch -d &lt;branch-name&gt;</code></p>
-                    <p>After merging, delete the branch locally using this command.</p>
-                </div>
+            <div class="card-content">
+              <h3>Switching Between Branches</h3>
+              <p><code>git checkout &lt;branch-name&gt;</code></p>
+              <p>This command allows you to switch to an existing branch.</p>
             </div>
-    
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/carbon (6).png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Pushing Branches to Remote</h3>
-                    <p><code>git push origin &lt;branch-name&gt;</code></p>
-                    <p>To share your branch with others, push it to the remote repository.</p>
-                </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/carbon (3).png" alt="" />
             </div>
+            <div class="card-content">
+              <h3>Listing All Branches</h3>
+              <p><code>git branch</code></p>
+              <p>This command shows all branches in your repository.</p>
             </div>
+          </div>
         </div>
-    </section>  
-</body>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/carbon (4).png" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Merging Branches</h3>
+              <p>
+                <code>git checkout main</code><br /><code
+                  >git merge &lt;branch-name&gt;</code
+                >
+              </p>
+              <p>Merge changes from another branch into the main branch.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/carbon (5).png" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Deleting a Branch</h3>
+              <p><code>git branch -d &lt;branch-name&gt;</code></p>
+              <p>
+                After merging, delete the branch locally using this command.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/carbon (6).png" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Pushing Branches to Remote</h3>
+              <p><code>git push origin &lt;branch-name&gt;</code></p>
+              <p>
+                To share your branch with others, push it to the remote
+                repository.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <h3>Contact us</h3>
+        <p>+123 21 456 7890</p>
+        <p>info@futuredevelopment.com</p>
+        <p>Coorporate: coop@futuredevelopment.com</p>
+      </div>
+      <div>
+        <h3>Future Development</h3>
+        <p>Storgatan-12</p>
+        <p>123-45 Fakecity</p>
+        <p></p>
+        <a href="https://www.youtube.com/shorts/xU-77SywYGI" target="_blank"
+          >Dont press me</a
+        >
+      </div>
+      <div>
+        <h3>Office Opening Hours</h3>
+        <p>Monday-Friday</p>
+        <p>09:00 - 18:00</p>
+        <p>Closed on weekends</p>
+      </div>
+      <a class="footer-logo" href="../websites-html/index.html">
+        <img
+          src="../images/future-development-high-resolution-logo-white-transparent.png"
+        />
+      </a>
+    </footer>
+  </body>
 </html>
