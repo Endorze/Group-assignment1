@@ -18,7 +18,7 @@ html {
 
 .main-content {
     flex-grow: 1;
-    margin-top: 120px;
+    margin-top: 10vh;
 }
 
 h4 {

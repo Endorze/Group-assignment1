@@ -1,82 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/websites-css/aboutus.css">
-    <link rel="stylesheet" href="/websites-css/master.css">
+    <link rel="stylesheet" href="/websites-css/aboutus.css" />
+    <link rel="stylesheet" href="/websites-css/master.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"/>
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="nav-bar">
-        <div class="nav-logo">
-          <img
-            src="/images/future-development-high-resolution-logo-white-transparent.png"
-          />
+      <a class="nav-logo" href="../websites-html/index.html">
+        <img
+          src="../images/future-development-high-resolution-logo-white-transparent.png"
+        />
+      </a>
+      <div class="nav-bar-anchors">
+        <div><a href="./index.html">Home</a></div>
+        <div class="nav-selected">
+          <a href="../websites-html/aboutus.html">About us</a>
         </div>
-        <div class="nav-bar-anchors">
-          <div class="nav-selected"><a href="./index.html">Home</a></div>
-          <div><a href="./aboutus.html">About us</a></div>
-          <div><a href="./">Information</a></div>
+        <div class="nav-bar-dropdown">
+          <a
+            >Information
+            <div class="nav-bar-chevron"></div
+          ></a>
+          <div class="nav-bar-dropdown-content">
+            <a href="../websites-html/project.html">Project</a>
+            <a href="../websites-html/changes.html">Changes</a>
+            <a href="../websites-html/branching.html">Branching</a>
+          </div>
         </div>
-        <div>
-          <button class="nav-bar-login-button">Login</button>
-          <input placeholder="Search..." class="nav-bar-searchbar" />
-        </div>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+          ><button class="nav-bar-login-button">Login</button></a
+        >
+        <input placeholder="Search..." class="nav-bar-searchbar" />
+      </div>
     </div>
-    
+
     <div>
-        <h2 class="page-title">About Us</h2>
+      <h2 class="page-title">About Us</h2>
     </div>
 
     <div class="about-us">
-        <div class="about-us_text">We are a group of passionate learners, all on the path to becoming Frontend Developers. Together, we are diving into the world of HTML, CSS, JavaScript, and modern web development frameworks. Our shared goal is to master the skills needed to build visually stunning, responsive, and user-friendly websites.</div>
-        <div class="about-us_text"> As a team, we collaborate on projects, solve coding challenges, and continuously push each other to improve. We believe in the power of teamwork and are excited about the endless possibilities that come with being part of the tech community.
-            Join us on our journey as we grow into the next generation of skilled frontend developers!</div>
+      <div class="about-us_text">
+        We are a group of passionate learners, all on the path to becoming
+        Frontend Developers. Together, we are diving into the world of HTML,
+        CSS, JavaScript, and modern web development frameworks. Our shared goal
+        is to master the skills needed to build visually stunning, responsive,
+        and user-friendly websites.
+      </div>
+      <div class="about-us_text">
+        As a team, we collaborate on projects, solve coding challenges, and
+        continuously push each other to improve. We believe in the power of
+        teamwork and are excited about the endless possibilities that come with
+        being part of the tech community. Join us on our journey as we grow into
+        the next generation of skilled frontend developers!
+      </div>
     </div>
 
     <section class="team-section">
-        <div class="grid-container">
-            <div class="team-member">
-                <img src="../images/rob.avif" alt="Rob, office tiger, sitting on a desk">
-                <h3>Rob/Instructur</h3>
-                <p>Rob is passionate about mastering CSS and enjoys creating visually stunning designs</p>
-            </div>
-            <div class="team-member">
-                <img src="../images/lava.jpeg" alt="Lava, office cat, sitting on a desk">
-                <h3>Lava</h3>
-                <p>Lava is fascinated by how websites adapt to different screen sizes and wants to learn about media queries and flexbox</p>
-            </div>
-            <div class="team-member">
-                <img src="../images/alexander.jpg" alt="Alexander, office cat, sitting on a desk">
-                <h3>Alexander</h3>
-                <p>Alexander is passionate about building websites that follow best practices and ensure accessibility for all users</p>
-            </div>
-            <div class="team-member">
-                <img src="../images/meaza.jpg" alt="Meaza, office cat">
-                <h3>Meaza</h3>
-                <p>Meaza is eager to learn layout techniques like grid and flexbox to create structured and visually appealing websites</p>
-            </div>
-            <div class="team-member">
-                <img src="../images/andre.jpg" alt="Andre, office cat">
-                <h3>Andre</h3>
-                <p>Andre loves experimenting with animations and transitions to make websites more interactive</p>
-            </div>
-            <div class="team-member">
-                <img src="../images/maedeh.avif" alt="Maedeh, office cat">
-                <h3>Maedeh</h3>
-                <p>Maedeh is interested in creating appealing text and color schemes that enhance user experience</p>
-            </div>
+      <div class="grid-container">
+        <div class="team-member">
+          <img
+            src="../images/rob.avif"
+            alt="Rob, office tiger, sitting on a desk"
+          />
+          <h3>Rob/Instructur</h3>
+          <p>
+            Rob is passionate about mastering CSS and enjoys creating visually
+            stunning designs
+          </p>
         </div>
+        <div class="team-member">
+          <img
+            src="../images/lava.jpeg"
+            alt="Lava, office cat, sitting on a desk"
+          />
+          <h3>Lava</h3>
+          <p>
+            Lava is fascinated by how websites adapt to different screen sizes
+            and wants to learn about media queries and flexbox
+          </p>
+        </div>
+        <div class="team-member">
+          <img
+            src="../images/alexander.jpg"
+            alt="Alexander, office cat, sitting on a desk"
+          />
+          <h3>Alexander</h3>
+          <p>
+            Alexander is passionate about building websites that follow best
+            practices and ensure accessibility for all users
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="../images/meaza.jpg" alt="Meaza, office cat" />
+          <h3>Meaza</h3>
+          <p>
+            Meaza is eager to learn layout techniques like grid and flexbox to
+            create structured and visually appealing websites
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="../images/andre.jpg" alt="Andre, office cat" />
+          <h3>Andre</h3>
+          <p>
+            Andre loves experimenting with animations and transitions to make
+            websites more interactive
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="../images/maedeh.avif" alt="Maedeh, office cat" />
+          <h3>Maedeh</h3>
+          <p>
+            Maedeh is interested in creating appealing text and color schemes
+            that enhance user experience
+          </p>
+        </div>
+      </div>
     </section>
-    
-    
-
-
-</body>
+    <footer class="footer">
+      <div>
+        <h3>Contact us</h3>
+        <p>+123 21 456 7890</p>
+        <p>info@futuredevelopment.com</p>
+        <p>Coorporate: coop@futuredevelopment.com</p>
+      </div>
+      <div>
+        <h3>Future Development</h3>
+        <p>Storgatan-12</p>
+        <p>123-45 Fakecity</p>
+        <p></p>
+        <a href="https://www.youtube.com/shorts/xU-77SywYGI" target="_blank"
+          >Dont press me</a
+        >
+      </div>
+      <div>
+        <h3>Office Opening Hours</h3>
+        <p>Monday-Friday</p>
+        <p>09:00 - 18:00</p>
+        <p>Closed on weekends</p>
+      </div>
+      <a class="footer-logo" href="../websites-html/index.html">
+        <img
+          src="../images/future-development-high-resolution-logo-white-transparent.png"
+        />
+      </a>
+    </footer>
+  </body>
 </html>

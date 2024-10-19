@@ -34,6 +34,8 @@ body {
   background-color: var(--color-bg);
   color: var(--color-bg-text);
   justify-content: space-evenly;
+  border-top: var(--color-content-section) 2px solid;
+  margin-top: 2rem;
 }
 
 .footer-logo img {
@@ -195,6 +197,26 @@ body {
 
   .nav-bar-login-button {
     display: none;
+  }
+  
+  .nav-bar a {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 10vh;
+    text-align: center;
+  }
+
+  .footer div {
+    max-width: 60vw;
+  }
+
+  .footer img {
+    width: 60vw;
+    margin-bottom: 1rem;
   }
 
 }
