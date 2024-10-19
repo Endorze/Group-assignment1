@@ -23,6 +23,7 @@ html {
 
 h4 {
     color: var(--color-header-text);
+    position: relative;
 }
 
 .grid-container {
@@ -48,6 +49,7 @@ h4 {
     padding: 10px; 
     overflow: hidden; 
     text-align: center; 
+    
 }
 
 .box__title {
@@ -72,87 +74,7 @@ h4 {
         80% { transform: translateX(2px); }
     }
 
-    .animated-text {
-        position: absolute;
-        top: 30px;
-        left: -100%; 
-        width: 100%;
-        text-align: center;
-        font-size: var(--font-size-h3);
-        font-weight: bold;
-        animation: slideIn 2s forwards;
-        margin-top: 70px;
-        
-    }
     
-    
-    @keyframes slideIn {
-        to {
-            left: 0; 
-        }
-    }
-
-    .animated-text__2 {
-        position: absolute;
-        top: calc(50% + 30px); 
-        left: -100%;
-        width: 100%;
-        text-align: center;
-        font-size: var(--font-size-h3);
-        font-weight: bold;
-        animation: slide-in 2s forwards;
-        
-        
-    }
-
-    .animated-text__3 {
-        position: absolute;
-        top: calc(90% + 30px); 
-        left: -100%;
-        width: 100%;
-        text-align: center;
-        font-size: var(--font-size-h3);
-        font-weight: bold;
-        animation: slide-in 2s forwards;
-        
-    }
-
-    .animated-text__4 {
-        position: absolute;
-        top: calc(90% + 340px); 
-        left: -100%;
-        width: 100%;
-        text-align: center;
-        font-size: var(--font-size-h3);
-        font-weight: bold;
-        animation: slide-in 2s forwards;
-        z-index: 10;
-        
-    }
-
-    .animated-text__5 {
-        position: absolute;
-        top: calc(100% + 600px); 
-        left: -100%;
-        width: 100%;
-        text-align: center;
-        font-size: var(--font-size-h3);
-        
-        animation: slide-in 2s forwards;
-        z-index: 10;
-        
-    }
-
-    
-    @keyframes slide-in {
-        from {
-            left: -100%;
-        }
-        to {
-            left: 50%; 
-            transform: translateX(-50%);
-        }
-    }
 
     
 @media screen and (max-width: 768px) {
@@ -216,91 +138,5 @@ h4 {
     #img5 {
         grid-row: 8;
         grid-column: 1;
-
-
-
-}
-
-.animated-text {
-    position: absolute;
-    top: 40px;
-    left: -100%; 
-    width: 100%;
-    text-align: center;
-    font-size: var(--font-size-p);
-    font-weight: bold;
-    animation: slideIn 2s forwards;
-    margin-top: 70px;
-    
-}
-
-
-
-
-@keyframes slideIn {
-    to {
-        left: 0; 
-    }
-}
-
-.animated-text__2 {
-    position: absolute;
-    top: calc(80% + 35px); 
-    left: -100%;
-    width: 100%;
-    text-align: center;
-    font-size: var(--font-size-p);
-    animation: slide-in 2s forwards;
-    
-    
-}
-
-.animated-text__3 {
-    position: absolute;
-    top: calc(90% + 580px); 
-    left: -100%;
-    width: 100%;
-    text-align: center;
-    font-size: var(--font-size-p);
-    animation: slide-in 2s forwards;
-    
-}
-
-.animated-text__4 {
-    position: absolute;
-    top: calc(100% + 1065px); 
-    left: -100%;
-    width: 100%;
-    text-align: center;
-    font-size: var(--font-size-p);
-    animation: slide-in 2s forwards;
-    z-index: 10;
-    
-}
-
-.animated-text__5 {
-    position: absolute;
-    top: calc(100% + 1700px); 
-    left: -100%;
-    width: 100%;
-    text-align: center;
-    font-size: var(--font-size-p);
-    animation: slide-in 2s forwards;
-    z-index: 10;
-    
-}
-
-
-@keyframes slide-in {
-    from {
-        left: -100%;
-    }
-    to {
-        left: 50%; 
-        transform: translateX(-50%);
-    }
 }
 }
-
-
-
