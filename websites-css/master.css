@@ -28,6 +28,25 @@ body {
 }
 
 .footer {
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  background-color: var(--color-bg);
+  color: var(--color-bg-text);
+  justify-content: space-evenly;
+}
+
+.footer-logo img {
+  width: 20vw;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-button);
+}
+
+.footer h3 {
+  color: var(--color-title);
 }
 
 .nav-bar {
@@ -179,4 +198,3 @@ body {
   }
 
 }
-
