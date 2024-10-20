@@ -22,7 +22,7 @@
 .about-us_text {
     background-color: var(--color-content-section);
     font-family: var(--font-family);
-    font-size: var(--font-size-p);  
+    font-size: var(--font-size-p);
     color: var(--color-bg-text);
     text-align: justify;
     line-height: 1.5;
@@ -73,7 +73,6 @@
 .team-member p {
     font-size: var(--font-size-p);
 }
-
 .contact-container {
     max-width: 1000px;
     margin: 50px auto;
